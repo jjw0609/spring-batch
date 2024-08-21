@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local
+    active: mysql
 
 ---
 spring:
@@ -24,8 +24,8 @@ spring:
     hikari:
       jdbc-url: jdbc:mysql://localhost:3306/springbatch?useUnicode=true&characterEncoding=utf8
       username: root
-      password: pass
+      password: wjdwodnd0609
       driver-class-name: com.mysql.jdbc.Driver
   batch:
     jdbc:
-      initialize-schema: never
+      initialize-schema: always
